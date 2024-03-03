@@ -6,7 +6,7 @@ from email.mime.text import MIMEText
 
 from_addr='ENTER_SENDERS_MAILID'
 
-data=pd.read_csv("abc.csv")         # Enter path of CSV files containing emails
+data=pd.read_csv("mail_list.csv")         # Enter path of CSV files containing emails
 to_addr=data['email'].tolist()      # Change'email' to column name containg emailids
 name = data['name'].tolist()
 
